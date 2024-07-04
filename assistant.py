@@ -67,7 +67,7 @@ def assistant(llm_input, cap, llm_history, client):
         messages=[
             {
                 "role": "system",
-                "content": "You are an assistant. Help the user with their question with the image provided. Response should be 2 sentences max.",
+                "content": "You are an assistant. Help the user with their question with the image provided. Response should be in Korean and 2 sentences max.",
             },
             {
                 "role": "user",
@@ -128,7 +128,7 @@ def main():
 
 
     while True:
-        cap = cv2.VideoCapture(1)
+        cap = cv2.VideoCapture(0)
         time.sleep(3)
 
         detect_and_record_audio()

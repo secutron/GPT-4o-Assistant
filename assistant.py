@@ -14,6 +14,11 @@ from pathlib import Path
 from playsound import playsound
 import os
 
+
+from dotenv import load_dotenv
+load_dotenv() 
+
+
 """
 Interactive Assistant
 
